@@ -1,0 +1,215 @@
+/* ============================================================
+   KazManager — Animations & Micro-interactions
+   Version : 1.0 · 2026-03-26
+   ============================================================ */
+
+/* ── Keyframes ────────────────────────────────────────────── */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 currentColor;
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.15);
+  }
+}
+
+@keyframes pulseGreen {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(127, 255, 176, 0.4);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 0 5px rgba(127, 255, 176, 0);
+  }
+}
+
+@keyframes scanLine {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ── Badge Pulse ──────────────────────────────────────────── */
+.badge-dot {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.badge-proof .badge-dot {
+  animation: pulseGreen 2s ease-in-out infinite;
+}
+
+/* ── Scroll-triggered Animations ─────────────────────────── */
+/* Initial hidden state */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.stagger-1 { transition-delay: 0.05s; }
+.stagger-2 { transition-delay: 0.10s; }
+.stagger-3 { transition-delay: 0.15s; }
+.stagger-4 { transition-delay: 0.20s; }
+.stagger-5 { transition-delay: 0.25s; }
+.stagger-6 { transition-delay: 0.30s; }
+
+/* ── Hero Animations ──────────────────────────────────────── */
+.hero-animate-1 {
+  animation: fadeDown 0.6s ease both;
+  animation-delay: 0.1s;
+}
+
+.hero-animate-2 {
+  animation: fadeDown 0.6s ease both;
+  animation-delay: 0.2s;
+}
+
+.hero-animate-3 {
+  animation: fadeUp 0.6s ease both;
+  animation-delay: 0.3s;
+}
+
+.hero-animate-4 {
+  animation: fadeUp 0.6s ease both;
+  animation-delay: 0.4s;
+}
+
+.hero-animate-5 {
+  animation: fadeIn 0.6s ease both;
+  animation-delay: 0.6s;
+}
+
+/* ── Cursor blink in code ─────────────────────────────────── */
+.code-cursor {
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: var(--accent-green);
+  animation: blink 1.2s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
+
+/* ── Proof Card Hover ─────────────────────────────────────── */
+.proof-card {
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.proof-card:hover {
+  box-shadow: 0 4px 24px rgba(127, 255, 176, 0.06);
+}
+
+/* ── Card hover lift ──────────────────────────────────────── */
+.card-lift {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Scan line effect on code blocks ──────────────────────── */
+.code-block {
+  overflow: hidden;
+  position: relative;
+}
+
+.code-block::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 229, 255, 0.03),
+    transparent
+  );
+  animation: scanLine 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ── Reduced motion ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll,
+  .hero-animate-1,
+  .hero-animate-2,
+  .hero-animate-3,
+  .hero-animate-4,
+  .hero-animate-5 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .badge-dot {
+    animation: none;
+  }
+
+  .code-block::after {
+    animation: none;
+  }
+}

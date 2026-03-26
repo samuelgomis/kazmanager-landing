@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>KazManager — AgentOps Readiness Pack · n8n · LLM · AI Act Ready</title>
+  <meta name="description" content="Déployez la fiabilité sur vos workflows n8n/LLM en 48h. Anti-boucle, déduplication Redis, traçabilité AI Act-ready. Livré avec preuves immuables. Revendable en white-label.">
+  <meta name="keywords" content="agentops, n8n reliability, LLM orchestration, AI Act compliance, workflow observability, agent incident response">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kazmanager.ai">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="KazManager — AgentOps Readiness Pack">
+  <meta property="og:description" content="Reliability Pack 48h pour agences n8n/LLM. Anti-boucle + dédup + traçabilité. Revendable en white-label.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kazmanager.ai">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KazManager — AgentOps Readiness Pack">
+  <meta name="twitter:description" content="Reliability Pack 48h pour agences n8n/LLM. Anti-boucle + dédup + traçabilité.">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       [1] NAV
+  ══════════════════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container" style="max-width:100%; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+
+      <a href="/" class="nav-logo" aria-label="KazManager — Accueil">
+        <div class="nav-logo-mark" aria-hidden="true">K</div>
+        KAZMANAGER
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#proof" aria-label="Voir les preuves Gate6">Preuves</a></li>
+        <li><a href="#pricing" aria-label="Voir les tarifs">Pricing</a></li>
+        <li><a href="#cta-final" aria-label="Réserver une démo">Démo 15 min</a></li>
+      </ul>
+
+      <a
+        href="mailto:samuel@kazmanager.ai?subject=AgentOps%20Readiness%20Pack%20-%20Appel%2015%20min"
+        class="nav-cta"
+        aria-label="Réserver un appel de 15 minutes"
+        data-cta
+        data-cta-id="nav_cta"
+        data-section="nav"
+        data-cta-type="default"
+      >Réserver un appel</a>
+
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       [2] HERO
+  ══════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="container">
+
+      <div class="hero-badge-row hero-animate-1">
+        <span class="badge badge-locked" aria-label="Statut: LOCKED Gate6 2026-03-13">
+          <span class="badge-dot" aria-hidden="true"></span>
+          LOCKED_G6_2026-03-13
+        </span>
+        <span class="badge badge-locked">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Gates 1–6 sanctuarisés
+        </span>
+        <span class="badge badge-proof">
+          <span class="badge-dot" aria-hidden="true"></span>
+          EXIT=0 prouvé
+        </span>
+      </div>
+
+      <h1 class="hero-title hero-animate-2">
+        Votre pipeline n8n/LLM<br>
+        est-il prêt pour la prod&nbsp;?
+      </h1>
+
+      <p class="hero-subtitle hero-animate-3">
+        KazManager déploie l'AgentOps Readiness Pack sur votre stack en 48h.<br>
+        Anti-boucle · Déduplication Redis · Traçabilité AI Act-ready.<br>
+        Livré avec preuves immuables. Revendable en white-label.
+      </p>
+
+      <div class="hero-cta-row hero-animate-4">
+        <a
+          href="mailto:samuel@kazmanager.ai?subject=AgentOps%20Readiness%20Pack%20-%20POC%2048h%20-%20%5BNOM%20AGENCE%5D&body=Bonjour%20Samuel%2C%0A%0AJe%20souhaite%20d%C3%A9marrer%20un%20POC%2048h%20sur%20le%20workflow%20suivant%20%3A%20%5B%C3%80%20compl%C3%A9ter%5D%0A%0ADisponibilit%C3%A9s%20%3A%20%5B%C3%80%20compl%C3%A9ter%5D"
+          class="btn btn-primary btn-large"
+          aria-label="Réserver un appel de 15 minutes pour un POC"
+          data-cta
+          data-cta-id="hero_primary"
+          data-section="hero"
+          data-cta-type="poc"
+        >
+          Réserver un appel 15 min →
+        </a>
+        <a
+          href="#proof"
+          class="btn btn-secondary btn-large"
+          aria-label="Voir les preuves Gate6"
+        >
+          Voir les preuves ↓
+        </a>
+      </div>
+
+      <p class="hero-proof hero-animate-5">
+        → Déployé sur <span>VPS Hostinger</span> · <span>n8n 1.117.3</span> · <span>Redis 7 Alpine</span> · Proof-based
+      </p>
+
+    </div>
+  </section>
+
+  <div class="divider divider-accent"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [3] PROBLÈME
+  ══════════════════════════════════════════════════════ -->
+  <section id="problem">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll">Problème</div>
+      <h2 class="mb-48 animate-on-scroll stagger-1">
+        Les 4 failles structurelles<br>des pipelines agentiques
+      </h2>
+
+      <div class="grid-2">
+
+        <div class="pain-card animate-on-scroll stagger-1">
+          <span class="pain-number" aria-hidden="true">01</span>
+          <div class="pain-title">Duplications &amp; boucles</div>
+          <p>
+            Les événements identiques sont rejoués → coûts LLM qui s'emballent,
+            incidents difficiles à reproduire, clients impactés.
+          </p>
+        </div>
+
+        <div class="pain-card animate-on-scroll stagger-2">
+          <span class="pain-number" aria-hidden="true">02</span>
+          <div class="pain-title">Debug opaque</div>
+          <p>
+            Sans trace standardisée, chaque incident devient une investigation
+            manuelle. MTTD/MTTR incontrôlables. Équipe mobilisée sur du support.
+          </p>
+        </div>
+
+        <div class="pain-card animate-on-scroll stagger-3">
+          <span class="pain-number" aria-hidden="true">03</span>
+          <div class="pain-title">Handoffs non traçables</div>
+          <p>
+            Chaque transfert entre agents risque d'être perdu ou rejoué.
+            Aucun audit trail pour justifier ce qui s'est réellement exécuté.
+          </p>
+        </div>
+
+        <div class="pain-card animate-on-scroll stagger-4">
+          <span class="pain-number" aria-hidden="true">04</span>
+          <div class="pain-title">Absence de preuve reproductible</div>
+          <p>
+            Impossible d'auditer, de certifier ou de vendre à des clients régulés
+            (santé, finance, infra critique) sans logging conforme.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [4] SOLUTION
+  ══════════════════════════════════════════════════════ -->
+  <section id="solution">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll">Solution</div>
+      <h2 class="mb-16 animate-on-scroll stagger-1">L'AgentOps Readiness Pack</h2>
+      <p class="mb-48 animate-on-scroll stagger-2" style="max-width:560px; font-size:14px;">
+        Un LOCK PACKAGE livré en 48h — anti-boucle + dédup + preuves immuables.
+        Reproductible. Auditable. Revendable en white-label à vos clients.
+      </p>
+
+      <div class="grid-2">
+
+        <div class="solution-card animate-on-scroll stagger-1">
+          <div class="solution-tag">Bloc 1 — Idempotency</div>
+          <h3 class="mb-12">Anti-boucle</h3>
+          <p>
+            Clé idempotente unique → tout doublon bloqué dès l'entrée du pipeline.
+            Redis SET NX EX → zéro replay, zéro double facturation LLM.
+          </p>
+        </div>
+
+        <div class="solution-card animate-on-scroll stagger-2">
+          <div class="solution-tag">Bloc 2 — Redis</div>
+          <h3 class="mb-12">Déduplication Redis</h3>
+          <p>
+            Namespace canonique <code style="color:var(--accent-cyan); font-size:11px;">kazsentinel:logsink:&lt;id&gt;</code> · TTL 86&thinsp;400s.
+            EXISTS=1 confirme la trace. Aucun doublon ne passe.
+          </p>
+        </div>
+
+        <div class="solution-card animate-on-scroll stagger-3">
+          <div class="solution-tag">Bloc 3 — Lock Package</div>
+          <h3 class="mb-12">Preuves immuables</h3>
+          <p>
+            Export JSON avant/après · script bash → EXIT=0 · runbook reproductible.
+            N'importe qui dans votre équipe peut prouver l'état du système en &lt;&nbsp;2&nbsp;min.
+          </p>
+        </div>
+
+        <div class="solution-card animate-on-scroll stagger-4">
+          <div class="solution-tag">Bloc 4 — Architecture</div>
+          <h3 class="mb-12">SSOT sans ambiguïté</h3>
+          <p>
+            1 endpoint · 1 workflow · 1 credential Redis · 1 namespace.
+            Zéro confusion. Zéro doublon de source de vérité.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider divider-accent"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [5] PREUVES
+  ══════════════════════════════════════════════════════ -->
+  <section id="proof">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll">Preuves Gate6</div>
+      <h2 class="mb-12 animate-on-scroll stagger-1">Reproductibles en &lt; 2 minutes</h2>
+      <p class="mb-48 animate-on-scroll stagger-2" style="max-width:480px;">
+        Ce n'est pas un deck. Ce sont des exécutions réelles, consultables, datées.
+      </p>
+
+      <div class="grid-3 mb-48">
+
+        <div class="proof-card animate-on-scroll stagger-1">
+          <div class="proof-meta">PREUVE 1 — Gate4 Baseline Auth</div>
+          <h3 class="mb-8">Baseline Auth</h3>
+          <div class="proof-meta">Run : Exec#1680 · Date : 2026-03-13</div>
+          <div class="proof-result">
+            → NO_KEY=403<br>
+            → WRONG=403<br>
+            → GOOD=200
+          </div>
+          <a
+            href="#"
+            class="proof-link"
+            aria-label="Voir l'exécution n8n Gate4"
+            data-gate="gate4"
+          >→ Voir l'exécution n8n</a>
+        </div>
+
+        <div class="proof-card animate-on-scroll stagger-2">
+          <div class="proof-meta">PREUVE 2 — Gate5 Redis Logsink</div>
+          <h3 class="mb-8">Redis Logsink</h3>
+          <div class="proof-meta">Run : G5_FIX_907 · Exec#1675 · Date : 2026-03-07</div>
+          <div class="proof-result">
+            → EXISTS=1<br>
+            → TTL=86243<br>
+            → GET non vide
+          </div>
+          <a
+            href="#"
+            class="proof-link"
+            aria-label="Voir l'exécution n8n Gate5"
+            data-gate="gate5"
+          >→ Voir l'exécution n8n</a>
+        </div>
+
+        <div class="proof-card animate-on-scroll stagger-3">
+          <div class="proof-meta">PREUVE 3 — Gate6 Lock Package</div>
+          <h3 class="mb-8">Lock Package</h3>
+          <div class="proof-meta">Run : G6_UP_WS_002 · Exec#1681 · Date : 2026-03-13</div>
+          <div class="proof-result">
+            → GOOD=200<br>
+            → EXISTS=1<br>
+            → TTL=86400 · Script EXIT=0
+          </div>
+          <a
+            href="#"
+            class="proof-link"
+            aria-label="Voir l'exécution n8n Gate6"
+            data-gate="gate6"
+          >→ Voir l'exécution n8n</a>
+        </div>
+
+      </div>
+
+      <!-- Code block proof -->
+      <div class="code-block animate-on-scroll" data-copyable>
+        <div class="code-block-header">Script de validation — bash</div>
+        <pre><span class="code-keyword">bash</span> /root/sentinel_gate_test.sh G6_UP_WS_002
+<span class="code-comment"># PASS: Gate4 + Gate6 + Redis OK for G6_UP_WS_002</span>
+<span class="code-success"># EXIT=0</span></pre>
+      </div>
+
+      <p class="mt-16 animate-on-scroll" style="font-size:11px; color:var(--text-muted); letter-spacing:0.05em;">
+        Toute preuve est reproductible sur votre stack en substituant votre RUN_ID.
+      </p>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [6] DIFFÉRENCIATEURS
+  ══════════════════════════════════════════════════════ -->
+  <section id="differentiators">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll">Différenciateurs</div>
+      <h2 class="mb-48 animate-on-scroll stagger-1">KazManager vs alternatives</h2>
+
+      <div class="comparison-table-wrapper animate-on-scroll stagger-2">
+        <table class="comparison-table" role="table" aria-label="Comparaison KazManager vs concurrents">
+          <thead>
+            <tr>
+              <th scope="col">Fonctionnalité</th>
+              <th scope="col" class="col-kaz">KazManager</th>
+              <th scope="col">n8n natif</th>
+              <th scope="col">Autres tools</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Idempotency Redis SET NX EX · TTL 86400</td>
+              <td class="col-kaz check-yes">✅ Natif</td>
+              <td class="check-no">❌</td>
+              <td class="check-maybe">⚠️ Optionnel</td>
+            </tr>
+            <tr>
+              <td>Preuves immuables EXIT=0 · JSON exports</td>
+              <td class="col-kaz check-yes">✅ Inclus</td>
+              <td class="check-no">❌</td>
+              <td class="check-no">❌</td>
+            </tr>
+            <tr>
+              <td>Runbook reproductible &lt; 2 min</td>
+              <td class="col-kaz check-yes">✅ Livré</td>
+              <td class="check-no">❌</td>
+              <td class="check-maybe">⚠️ Docs génériques</td>
+            </tr>
+            <tr>
+              <td>AI Act logging — horodatage · payload · outcome</td>
+              <td class="col-kaz check-yes">✅ Conforme</td>
+              <td class="check-no">❌</td>
+              <td class="check-maybe">⚠️ Partiel</td>
+            </tr>
+            <tr>
+              <td>White-label revendable</td>
+              <td class="col-kaz check-yes">✅ LOCK PACKAGE</td>
+              <td class="check-no">❌</td>
+              <td class="check-no">❌</td>
+            </tr>
+            <tr>
+              <td>MTTD/MTTR mesurable</td>
+              <td class="col-kaz check-yes">✅ TTL + timestamps</td>
+              <td class="check-no">❌</td>
+              <td class="check-maybe">⚠️ Variable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider divider-accent"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [7] AI ACT
+  ══════════════════════════════════════════════════════ -->
+  <section id="aiact">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll">Gouvernance</div>
+      <h2 class="mb-12 animate-on-scroll stagger-1">Conformité opérationnelle — AI Act Ready</h2>
+      <p class="mb-48 animate-on-scroll stagger-2" style="max-width:560px; font-size:14px;">
+        L'AI Act européen renforce les exigences de logging et traçabilité
+        pour les systèmes agentiques à partir de 2026.
+        KazManager intègre ces exigences dès l'architecture.
+      </p>
+
+      <div class="animate-on-scroll stagger-3">
+
+        <div class="aiact-point">
+          <div class="aiact-icon" aria-hidden="true">◈</div>
+          <div class="aiact-content">
+            <h4>Logging automatique horodaté</h4>
+            <p>
+              Chaque run laisse une trace structurée :
+              idempotency_key · timestamp ISO · payload · outcome · modèle LLM utilisé.
+            </p>
+          </div>
+        </div>
+
+        <div class="aiact-point">
+          <div class="aiact-icon" aria-hidden="true">◈</div>
+          <div class="aiact-content">
+            <h4>Immuabilité des preuves</h4>
+            <p>
+              Snapshots Redis (TTL 86400) + exports JSON signés.
+              Audit trail consultable post-incident, sans reconstruction manuelle.
+            </p>
+          </div>
+        </div>
+
+        <div class="aiact-point">
+          <div class="aiact-icon" aria-hidden="true">◈</div>
+          <div class="aiact-content">
+            <h4>Post-market monitoring</h4>
+            <p>
+              EXISTS/TTL/GET sur chaque clé → vérification continue de l'état du pipeline.
+              Détection d'anomalie sans monitoring tiers requis.
+            </p>
+          </div>
+        </div>
+
+        <div class="aiact-point">
+          <div class="aiact-icon" aria-hidden="true">◈</div>
+          <div class="aiact-content">
+            <h4>Incident response structuré</h4>
+            <p>
+              Runbook standardisé : STOP → SCAN → identifier → corriger.
+              MTTD/MTTR mesurables pour chaque workflow.
+            </p>
+          </div>
+        </div>
+
+        <div class="aiact-point">
+          <div class="aiact-icon" aria-hidden="true">◈</div>
+          <div class="aiact-content">
+            <h4>Compatible PME/ETI régulées</h4>
+            <p>
+              Santé · Finance · Infra critique.
+              Les preuves immuables répondent aux exigences d'audit des secteurs régulés.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="aiact-quote animate-on-scroll mt-48">
+        <blockquote>
+          "L'écosystème pousse 'Agent Ops = observability + incident response'
+          et l'AI Act renforce les exigences de logging/traçabilité pour 2026."
+        </blockquote>
+        <cite>— Perplexity Market Intelligence, Mars 2026</cite>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [8] PRICING
+  ══════════════════════════════════════════════════════ -->
+  <section id="pricing">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll">Tarifs</div>
+      <h2 class="mb-12 animate-on-scroll stagger-1">
+        Deux façons d'intégrer le Reliability Pack
+      </h2>
+      <p class="mb-8 animate-on-scroll stagger-2" style="font-size:13px; color:var(--text-muted);">
+        Point de rentabilité client : 1 incident évité = ROI positif.
+      </p>
+
+      <div class="pricing-grid">
+
+        <!-- Offre 1 — POC 48h -->
+        <div class="pricing-card animate-on-scroll stagger-1">
+          <div class="pricing-label">One-shot</div>
+          <div class="pricing-name">AgentOps Starter</div>
+          <div class="pricing-price"><sup>€</sup>3&thinsp;000</div>
+          <div class="pricing-period">Livraison en 48h — paiement unique</div>
+
+          <div class="pricing-divider"></div>
+
+          <ul class="pricing-features" role="list">
+            <li>Déploiement Gate6 sur votre stack n8n + Redis</li>
+            <li>LOCK PACKAGE complet (exports JSON + script + runbook)</li>
+            <li>Preuves reproductibles en &lt; 2 min (EXIT=0 garanti)</li>
+            <li>Tableau "que faire si ça casse" (incident response)</li>
+            <li>White-label inclus — revendable à vos clients</li>
+            <li>Kick-off 30 min + 1 workflow cible de votre choix</li>
+          </ul>
+
+          <a
+            href="mailto:samuel@kazmanager.ai?subject=AgentOps%20Readiness%20Pack%20-%20POC%2048h%20-%20%5BNOM%20AGENCE%5D&body=Bonjour%20Samuel%2C%0A%0AJe%20souhaite%20d%C3%A9marrer%20un%20POC%2048h%20sur%20le%20workflow%20suivant%20%3A%0A%5BD%C3%A9crire%20le%20workflow%20cible%5D%0A%0AStack%20actuelle%20%3A%0A-%20n8n%20%3A%20%5Bversion%5D%0A-%20Redis%20%3A%20%5Boui%2Fnon%5D%0A%0ADisponibilit%C3%A9s%20%3A%20%5BCr%C3%A9neaux%5D"
+            class="btn btn-primary"
+            style="width:100%; justify-content:center;"
+            aria-label="Démarrer un POC AgentOps Starter 3000€"
+            data-cta
+            data-cta-id="pricing_starter"
+            data-section="pricing"
+            data-cta-type="poc"
+          >Démarrer un POC →</a>
+        </div>
+
+        <!-- Offre 2 — Mensuel -->
+        <div class="pricing-card featured animate-on-scroll stagger-2">
+          <div class="pricing-label">Récurrent</div>
+          <div class="pricing-name">Managed Reliability</div>
+          <div class="pricing-price"><sup>€</sup>990</div>
+          <div class="pricing-period">par mois — sans engagement</div>
+
+          <div class="pricing-divider"></div>
+
+          <ul class="pricing-features" role="list">
+            <li>Tout l'AgentOps Starter, plus :</li>
+            <li>Monitoring continu EXISTS/TTL/GET</li>
+            <li>Runbook mis à jour à chaque évolution de votre stack</li>
+            <li>Support incident response sous 24h</li>
+            <li>Nouvelles preuves immuables à chaque release</li>
+            <li>Évolutions contrôlées (PAS DE CASSE garanti)</li>
+          </ul>
+
+          <a
+            href="mailto:samuel@kazmanager.ai?subject=AgentOps%20-%20Managed%20Reliability%20990%E2%82%AC%2Fmois%20-%20%5BNOM%20AGENCE%5D&body=Bonjour%20Samuel%2C%0A%0AJe%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l'offre%20Managed%20Reliability.%0A%0AContexte%20%3A%0A-%20Nombre%20de%20workflows%20%3A%20%5BX%5D%0A-%20Stack%20%3A%20n8n%20%2B%20Redis%20%5Boui%2Fnon%5D%0A%0ADisponibilit%C3%A9s%20%3A%20%5BCr%C3%A9neaux%5D"
+            class="btn btn-secondary"
+            style="width:100%; justify-content:center;"
+            aria-label="Voir les détails de l'offre Managed Reliability 990€/mois"
+            data-cta
+            data-cta-id="pricing_managed"
+            data-section="pricing"
+            data-cta-type="managed"
+          >Voir les détails →</a>
+        </div>
+
+      </div>
+
+      <div class="pricing-note animate-on-scroll mt-24">
+        Pricing ajustable selon volume de workflows et taille d'agence.<br>
+        Tous les prix sont HT.
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider divider-accent"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [9] ICP
+  ══════════════════════════════════════════════════════ -->
+  <section id="icp">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll">Pour qui ?</div>
+      <h2 class="mb-48 animate-on-scroll stagger-1">3 profils clients</h2>
+
+      <div class="grid-3">
+
+        <div class="icp-card animate-on-scroll stagger-1">
+          <div class="icp-number">Profil 01</div>
+          <div class="icp-title">Agences n8n/LLM</div>
+          <p>
+            Vous déployez des workflows n8n pour vos clients.
+            Un incident en prod = une nuit blanche et une facture support.
+            Le LOCK PACKAGE vous donne une preuve de fiabilité à montrer à vos clients
+            — et un argument commercial différenciant.
+          </p>
+        </div>
+
+        <div class="icp-card animate-on-scroll stagger-2">
+          <div class="icp-number">Profil 02</div>
+          <div class="icp-title">Intégrateurs IA (white-label)</div>
+          <p>
+            Vous revendez des solutions IA à vos clients.
+            L'AgentOps Readiness Pack devient votre propre offre de fiabilité,
+            livrée sous votre marque, avec les preuves à l'appui.
+          </p>
+        </div>
+
+        <div class="icp-card animate-on-scroll stagger-3">
+          <div class="icp-number">Profil 03</div>
+          <div class="icp-title">PME/ETI régulées</div>
+          <p>
+            Santé, finance, infra critique.
+            Vous avez besoin d'un audit trail conforme AI Act et d'une
+            incident response documentée. On vous livre ça en 48h.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [10] CTA FINAL
+  ══════════════════════════════════════════════════════ -->
+  <section id="cta-final">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll" style="justify-content:center;">Prêt ?</div>
+      <h2 class="mb-16 animate-on-scroll stagger-1">
+        Prêt à sanctuariser votre premier workflow&nbsp;?
+      </h2>
+      <p class="mb-48 animate-on-scroll stagger-2" style="max-width:480px; margin:0 auto 48px; font-size:14px;">
+        Donnez-moi 1 workflow "à problème".<br>
+        Je vous livre le LOCK PACKAGE en 48h — preuves incluses, EXIT=0 garanti.
+      </p>
+
+      <!-- Process steps -->
+      <div class="process-steps animate-on-scroll stagger-3" role="list" aria-label="Processus en 4 étapes">
+
+        <div class="process-step" role="listitem">
+          <div class="process-num" aria-hidden="true">①</div>
+          <div class="process-text">Appel 15 min<br>Identifier le workflow cible</div>
+        </div>
+
+        <div class="process-step" role="listitem">
+          <div class="process-num" aria-hidden="true">②</div>
+          <div class="process-text">Accès n8n + Redis<br>ou visio partage écran</div>
+        </div>
+
+        <div class="process-step" role="listitem">
+          <div class="process-num" aria-hidden="true">③</div>
+          <div class="process-text">Déploiement + preuves<br>sous 48h</div>
+        </div>
+
+        <div class="process-step" role="listitem">
+          <div class="process-num" aria-hidden="true">④</div>
+          <div class="process-text">Runbook + LOCK PACKAGE<br>livré dans Notion</div>
+        </div>
+
+      </div>
+
+      <!-- CTA buttons -->
+      <div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-top:48px;" class="animate-on-scroll stagger-4">
+        <a
+          href="mailto:samuel@kazmanager.ai?subject=AgentOps%20Readiness%20Pack%20-%20POC%2048h%20-%20%5BNOM%20AGENCE%5D&body=Bonjour%20Samuel%2C%0A%0AJe%20souhaite%20d%C3%A9marrer%20un%20POC%2048h%20sur%20le%20workflow%20suivant%20%3A%0A%5BD%C3%A9crire%20le%20workflow%20cible%5D%0A%0AStack%20actuelle%20%3A%0A-%20n8n%20%3A%20%5Bversion%5D%0A-%20Redis%20%3A%20%5Boui%2Fnon%5D%0A%0ADisponibilit%C3%A9s%20pour%20le%20kick-off%2030%20min%20%3A%0A%5BCr%C3%A9neaux%20disponibles%5D"
+          class="btn btn-primary btn-large"
+          aria-label="Réserver un appel de 15 minutes avec Samuel"
+          data-cta
+          data-cta-id="cta_final_primary"
+          data-section="cta_final"
+          data-cta-type="poc"
+        >→ Réserver un appel 15 min</a>
+
+        <a
+          href="https://notion.so"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary btn-large"
+          aria-label="Voir le one-pager complet sur Notion"
+          data-cta
+          data-cta-id="cta_final_secondary"
+          data-section="cta_final"
+          data-cta-type="default"
+        >→ Voir le one-pager complet</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       [11] FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div>
+          <div class="footer-brand">
+            <div class="nav-logo-mark" aria-hidden="true">K</div>
+            KAZMANAGER
+          </div>
+          <div class="footer-tagline">
+            AgentOps Readiness Pack<br>
+            n8n · LLM · AI Act Ready
+          </div>
+          <div class="footer-meta mt-16">
+            Gates 1–6 : <span style="color:var(--accent-cyan);">LOCKED_G6_2026-03-13</span><br>
+            n8n 1.117.3 · Redis 7 · Docker · VPS
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-meta mb-12" style="color:var(--text-muted); letter-spacing:0.15em; text-transform:uppercase; font-size:9px;">Liens</div>
+          <nav class="footer-links" aria-label="Liens footer">
+            <a href="#proof" aria-label="Preuves Gate6">Preuves Gate6</a>
+            <a href="#solution" aria-label="Runbook">Runbook</a>
+            <a href="#pricing" aria-label="SOW Pilote 48h">SOW Pilote 48h</a>
+            <a href="#differentiators" aria-label="Comparatif">Comparatif</a>
+            <a href="#aiact" aria-label="AI Act compliance">AI Act compliance</a>
+          </nav>
+        </div>
+
+        <div>
+          <div class="footer-meta mb-12" style="color:var(--text-muted); letter-spacing:0.15em; text-transform:uppercase; font-size:9px;">Contact</div>
+          <a
+            href="mailto:samuel@kazmanager.ai"
+            style="font-family:var(--font-mono); font-size:12px; color:var(--accent-cyan);"
+            aria-label="Envoyer un email à Samuel"
+          >samuel@kazmanager.ai</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          KAZMANAGER · Built by Samuel Gomis · Architecture&nbsp;: Claude Cowork
+        </div>
+        <div class="footer-version">
+          Version&nbsp;: 1.0 · 2026-03-26
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ── Scripts (defer) ──────────────────────────────────── -->
+  <script src="assets/js/analytics.js" defer></script>
+  <script src="assets/js/forms.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
