@@ -351,58 +351,54 @@
     <div class="container">
 
       <div class="section-label animate-on-scroll">Différenciateurs</div>
-      <h2 class="mb-48 animate-on-scroll stagger-1">KazManager vs alternatives</h2>
+      <h2 class="mb-12 animate-on-scroll stagger-1">Pourquoi KazManager + n8n ?</h2>
+      <p class="mb-48 animate-on-scroll stagger-2" style="max-width:560px; font-size:14px;">
+        KazManager n'est pas un concurrent de n8n — c'est la couche gouvernance qui manquait.
+      </p>
 
-      <div class="comparison-table-wrapper animate-on-scroll stagger-2">
-        <table class="comparison-table" role="table" aria-label="Comparaison KazManager vs concurrents">
+      <div class="comparison-table-wrapper animate-on-scroll stagger-3">
+        <table class="comparison-table" role="table" aria-label="Comparaison KazManager + n8n vs alternatives">
           <thead>
             <tr>
-              <th scope="col">Fonctionnalité</th>
-              <th scope="col" class="col-kaz">KazManager</th>
-              <th scope="col">n8n natif</th>
-              <th scope="col">Autres tools</th>
+              <th scope="col">Capacité</th>
+              <th scope="col" class="col-kaz">KazManager + n8n</th>
+              <th scope="col">n8n seul</th>
+              <th scope="col">LangGraph / CrewAI</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Idempotency Redis SET NX EX · TTL 86400</td>
-              <td class="col-kaz check-yes">✅ Natif</td>
-              <td class="check-no">❌</td>
-              <td class="check-maybe">⚠️ Optionnel</td>
-            </tr>
-            <tr>
-              <td>Preuves immuables EXIT=0 · JSON exports</td>
-              <td class="col-kaz check-yes">✅ Inclus</td>
-              <td class="check-no">❌</td>
-              <td class="check-no">❌</td>
-            </tr>
-            <tr>
-              <td>Runbook reproductible &lt; 2 min</td>
-              <td class="col-kaz check-yes">✅ Livré</td>
-              <td class="check-no">❌</td>
-              <td class="check-maybe">⚠️ Docs génériques</td>
-            </tr>
-            <tr>
-              <td>AI Act logging — horodatage · payload · outcome</td>
-              <td class="col-kaz check-yes">✅ Conforme</td>
-              <td class="check-no">❌</td>
+              <td>Gouvernance (idempotence, AI Act logs)</td>
+              <td class="col-kaz check-yes">✅ Natif — preuves immuables</td>
+              <td class="check-no">❌ Manuel</td>
               <td class="check-maybe">⚠️ Partiel</td>
             </tr>
             <tr>
-              <td>White-label revendable</td>
-              <td class="col-kaz check-yes">✅ LOCK PACKAGE</td>
+              <td>Déploiement sans refonte (zero-touch)</td>
+              <td class="col-kaz check-yes">✅ Pack livré en 48h</td>
               <td class="check-no">❌</td>
               <td class="check-no">❌</td>
             </tr>
             <tr>
-              <td>MTTD/MTTR mesurable</td>
-              <td class="col-kaz check-yes">✅ TTL + timestamps</td>
+              <td>Multi-LLM vendor-neutral</td>
+              <td class="col-kaz check-yes">✅ 4 LLM + routage intelligent</td>
+              <td class="check-maybe">⚠️ Limité</td>
+              <td class="check-maybe">⚠️ Dépend du framework</td>
+            </tr>
+            <tr>
+              <td>Pack enterprise (runbooks + preuves)</td>
+              <td class="col-kaz check-yes">✅ LOCK PACKAGE livrable</td>
               <td class="check-no">❌</td>
-              <td class="check-maybe">⚠️ Variable</td>
+              <td class="check-no">❌</td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <p class="mt-24 animate-on-scroll" style="max-width:560px; font-size:13px; color:var(--text-secondary);">
+        KazManager s'intègre à vos outils existants — n8n, LangGraph, CrewAI.<br>
+        Il ne les remplace pas. Il leur donne la gouvernance.
+      </p>
 
     </div>
   </section>
