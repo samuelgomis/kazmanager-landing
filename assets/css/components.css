@@ -839,7 +839,7 @@ footer {
 .footer-tagline {
   font-family: var(--font-mono);
   font-size: 14px !important;
-  color: var(--text-body) !important;
+  color: var(--text-muted) !important;
   line-height: 1.8 !important;
   max-width: 240px;
 }
@@ -847,7 +847,7 @@ footer {
 .footer-meta {
   font-family: var(--font-mono);
   font-size: 14px !important;
-  color: var(--text-body) !important;
+  color: var(--text-muted) !important;
   line-height: 1.8 !important;
 }
 
@@ -860,7 +860,7 @@ footer {
 .footer-links a {
   font-family: var(--font-mono);
   font-size: 14px !important;
-  color: var(--text-body) !important;
+  color: var(--text-muted) !important;
   text-decoration: none;
   transition: color var(--transition-fast);
   line-height: 1.8 !important;
@@ -883,7 +883,7 @@ footer {
 .footer-copy {
   font-family: var(--font-mono);
   font-size: 13px !important;
-  color: var(--text-body) !important;
+  color: var(--text-muted) !important;
   letter-spacing: 0.05em;
   line-height: 1.8 !important;
 }
@@ -891,7 +891,7 @@ footer {
 .footer-version {
   font-family: var(--font-mono);
   font-size: 13px !important;
-  color: var(--text-body) !important;
+  color: var(--text-muted) !important;
   letter-spacing: 0.1em;
   line-height: 1.8 !important;
 }
