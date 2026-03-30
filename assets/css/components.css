@@ -838,17 +838,17 @@ footer {
 
 .footer-tagline {
   font-family: var(--font-mono);
-  font-size: 14px;
-  color: var(--text-body);
-  line-height: 1.8;
+  font-size: 14px !important;
+  color: var(--text-body) !important;
+  line-height: 1.8 !important;
   max-width: 240px;
 }
 
 .footer-meta {
   font-family: var(--font-mono);
-  font-size: 14px;
-  color: var(--text-body);
-  line-height: 1.8;
+  font-size: 14px !important;
+  color: var(--text-body) !important;
+  line-height: 1.8 !important;
 }
 
 .footer-links {
@@ -859,11 +859,11 @@ footer {
 
 .footer-links a {
   font-family: var(--font-mono);
-  font-size: 14px;
-  color: var(--text-body);
+  font-size: 14px !important;
+  color: var(--text-body) !important;
   text-decoration: none;
   transition: color var(--transition-fast);
-  line-height: 1.8;
+  line-height: 1.8 !important;
 }
 
 .footer-links a:hover {
@@ -882,18 +882,18 @@ footer {
 
 .footer-copy {
   font-family: var(--font-mono);
-  font-size: 14px;
-  color: var(--text-body);
+  font-size: 13px !important;
+  color: var(--text-body) !important;
   letter-spacing: 0.05em;
-  line-height: 1.8;
+  line-height: 1.8 !important;
 }
 
 .footer-version {
   font-family: var(--font-mono);
-  font-size: 14px;
-  color: var(--text-body);
+  font-size: 13px !important;
+  color: var(--text-body) !important;
   letter-spacing: 0.1em;
-  line-height: 1.8;
+  line-height: 1.8 !important;
 }
 
 /* ── Responsive Components ────────────────────────────────── */
