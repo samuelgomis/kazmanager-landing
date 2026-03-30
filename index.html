@@ -286,78 +286,58 @@
   <section id="proof">
     <div class="container">
 
-      <div class="section-label animate-on-scroll">Preuves Gate6</div>
+      <div class="section-label animate-on-scroll">COMMENT ON PROUVE QUE ÇA MARCHE ?</div>
       <h2 class="mb-12 animate-on-scroll stagger-1">Reproductibles en &lt; 2 minutes</h2>
       <p class="mb-48 animate-on-scroll stagger-2" style="max-width:480px;">
-        Ce n'est pas un deck. Ce sont des exécutions réelles, consultables, datées.
+        Chaque déploiement est validé sur un environnement réel.<br>
+        3 preuves indépendantes, disponibles sur demande.
       </p>
 
       <div class="grid-3 mb-48">
 
         <div class="proof-card animate-on-scroll stagger-1">
-          <div class="proof-meta">PREUVE 1 — Gate4 Baseline Auth</div>
-          <h3 class="mb-8">Baseline Auth</h3>
-          <div class="proof-meta">Run : Exec#1680 · Date : 2026-03-13</div>
+          <div class="proof-meta">PREUVE 1</div>
+          <h3 class="mb-8">Preuve d'authentification</h3>
+          <div class="proof-meta">13 mars 2026</div>
           <div class="proof-result">
-            → NO_KEY=403<br>
-            → WRONG=403<br>
-            → GOOD=200
+            Validé sur environnement réel.
           </div>
           <a
-            href="#"
+            href="mailto:samuel@kazmanager.ai?subject=Demande%20de%20preuves%20KazManager"
             class="proof-link"
-            aria-label="Voir l'exécution n8n Gate4"
-            data-gate="gate4"
-          >→ Voir l'exécution n8n</a>
+            aria-label="Demander les preuves d'authentification"
+          >→ Demander les preuves</a>
         </div>
 
         <div class="proof-card animate-on-scroll stagger-2">
-          <div class="proof-meta">PREUVE 2 — Gate5 Redis Logsink</div>
-          <h3 class="mb-8">Redis Logsink</h3>
-          <div class="proof-meta">Run : G5_FIX_907 · Exec#1675 · Date : 2026-03-07</div>
+          <div class="proof-meta">PREUVE 2</div>
+          <h3 class="mb-8">Preuve de traçabilité</h3>
+          <div class="proof-meta">7 mars 2026</div>
           <div class="proof-result">
-            → EXISTS=1<br>
-            → TTL=86243<br>
-            → GET non vide
+            Validé sur environnement réel.
           </div>
           <a
-            href="#"
+            href="mailto:samuel@kazmanager.ai?subject=Demande%20de%20preuves%20KazManager"
             class="proof-link"
-            aria-label="Voir l'exécution n8n Gate5"
-            data-gate="gate5"
-          >→ Voir l'exécution n8n</a>
+            aria-label="Demander les preuves de traçabilité"
+          >→ Demander les preuves</a>
         </div>
 
         <div class="proof-card animate-on-scroll stagger-3">
-          <div class="proof-meta">PREUVE 3 — Gate6 Lock Package</div>
-          <h3 class="mb-8">Lock Package</h3>
-          <div class="proof-meta">Run : G6_UP_WS_002 · Exec#1681 · Date : 2026-03-13</div>
+          <div class="proof-meta">PREUVE 3</div>
+          <h3 class="mb-8">Preuve de déploiement complet</h3>
+          <div class="proof-meta">13 mars 2026</div>
           <div class="proof-result">
-            → GOOD=200<br>
-            → EXISTS=1<br>
-            → TTL=86400 · Script EXIT=0
+            Validé sur environnement réel.
           </div>
           <a
-            href="#"
+            href="mailto:samuel@kazmanager.ai?subject=Demande%20de%20preuves%20KazManager"
             class="proof-link"
-            aria-label="Voir l'exécution n8n Gate6"
-            data-gate="gate6"
-          >→ Voir l'exécution n8n</a>
+            aria-label="Demander les preuves de déploiement complet"
+          >→ Demander les preuves</a>
         </div>
 
       </div>
-
-      <!-- Code block proof -->
-      <div class="code-block animate-on-scroll" data-copyable>
-        <div class="code-block-header">Script de validation — bash</div>
-        <pre><span class="code-keyword">bash</span> /root/sentinel_gate_test.sh G6_UP_WS_002
-<span class="code-comment"># PASS: Gate4 + Gate6 + Redis OK for G6_UP_WS_002</span>
-<span class="code-success"># EXIT=0</span></pre>
-      </div>
-
-      <p class="mt-16 animate-on-scroll" style="font-size:11px; color:var(--text-muted); letter-spacing:0.05em;">
-        Toute preuve est reproductible sur votre stack en substituant votre RUN_ID.
-      </p>
 
     </div>
   </section>
