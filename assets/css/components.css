@@ -365,9 +365,9 @@
 
 .hero-subtitle {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.7;
-  color: var(--text-body);
+  color: var(--text-primary);
   max-width: 600px;
   margin-bottom: 36px;
 }

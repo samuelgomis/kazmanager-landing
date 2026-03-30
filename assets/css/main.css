@@ -157,6 +157,11 @@ section {
   opacity: 0.6;
 }
 
+/* ── Hero centrage ────────────────────────────────────────── */
+#hero .container {
+  text-align: center;
+}
+
 /* ── Grid ─────────────────────────────────────────────────── */
 .grid-2 {
   display: grid;
