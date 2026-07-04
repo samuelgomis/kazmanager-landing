@@ -74,9 +74,9 @@
     <div class="container">
 
       <div class="hero-badge-row hero-animate-1">
-        <span class="badge badge-locked" aria-label="Certifié le 13 mars 2026">
+        <span class="badge badge-locked" aria-label="Validé le 13 mars 2026 · environnement réel">
           <span class="badge-dot" aria-hidden="true"></span>
-          Certifié le 13 mars 2026
+          Validé le 13 mars 2026 · environnement réel
         </span>
         <span class="badge badge-locked">
           <span class="badge-dot" aria-hidden="true"></span>
@@ -90,13 +90,13 @@
 
       <h1 class="hero-title hero-animate-2">
         <span style="display:block; margin-bottom:0.4em;">Vos agents IA peuvent casser la prod.</span>
-        <span style="display:block;">KazManager les met sous LOCK en 48h.</span>
+        <span style="display:block;">Commencez par un diagnostic — avant toute correction en prod.</span>
       </h1>
 
       <p class="hero-subtitle hero-animate-3">
-        AgentOps Readiness Pack pour pipelines n8n/LLM et agents IA :<br>
-        plus d'incidents en prod, moins de nuits blanches,<br>
-        audit AI Act prêt en 48h. Revendable en white-label.
+        Diagnostic anti-casse pour workflows n8n, Bubble et agents IA.<br>
+        Identifiez les risques, données manquantes et actions de sécurisation<br>
+        avant toute modification en production.
       </p>
 
       <div class="hero-cta-row hero-animate-4">
@@ -121,7 +121,7 @@
       </div>
 
       <p class="hero-proof hero-animate-5">
-        → Déployé sur infrastructure dédiée · Orchestrateur open-source · Preuves vérifiables
+        → AgentOps Diagnostic 300–500 € · 24–48h ouvrées · best-effort selon données fournies
       </p>
 
     </div>
@@ -210,7 +210,7 @@
           <div class="pain-title" style="color: var(--accent-green); margin-bottom: 20px;">Avec KazManager</div>
           <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
             <li style="color: var(--text-secondary); font-size: 13px;">✓ Une source de vérité unique — tout est traçable</li>
-            <li style="color: var(--text-secondary); font-size: 13px;">✓ Zéro doublon, zéro double facturation</li>
+            <li style="color: var(--text-secondary); font-size: 13px;">✓ Réduction des doublons et doubles facturations</li>
             <li style="color: var(--text-secondary); font-size: 13px;">✓ Chaque exécution prouvée en moins de 2 minutes</li>
             <li style="color: var(--text-secondary); font-size: 13px;">✓ Temps de résolution mesurable et documenté</li>
             <li style="color: var(--text-secondary); font-size: 13px;">✓ Argumentaire fiabilité clé-en-main pour vos clients</li>
@@ -492,6 +492,52 @@
   <div class="divider"></div>
 
   <!-- ══════════════════════════════════════════════════════
+       [7B] AGENTOPS DIAGNOSTIC
+  ══════════════════════════════════════════════════════ -->
+  <section id="diagnostic">
+    <div class="container">
+
+      <div class="section-label animate-on-scroll">Point d'entrée</div>
+      <h2 class="mb-16 animate-on-scroll stagger-1">AgentOps Diagnostic</h2>
+      <p class="mb-48 animate-on-scroll stagger-2" style="max-width:560px; font-size:14px;">
+        Vous avez des workflows n8n, Bubble ou agents IA en production ?<br>
+        Avant toute correction, identifiez précisément les risques.
+      </p>
+
+      <div class="solution-card animate-on-scroll stagger-3" style="max-width:560px;">
+        <div class="solution-tag">Diagnostic anti-casse · 300–500 €</div>
+        <h3 class="mb-12">Rapport structuré en 24–48h ouvrées</h3>
+        <p class="mb-16">
+          Décrivez votre incident ou workflow.<br>
+          Vous recevez un rapport structuré avec :
+        </p>
+        <ul style="list-style:none; padding:0; margin:0 0 24px; display:flex; flex-direction:column; gap:10px; font-size:13px; color:var(--text-secondary);">
+          <li>→ Niveau de risque (LOW / MEDIUM / HIGH)</li>
+          <li>→ Données manquantes pour corriger</li>
+          <li>→ Architecture recommandée</li>
+          <li>→ Recommandations priorisées</li>
+          <li>→ Validation Samuel avant remise</li>
+        </ul>
+        <p style="font-size:12px; color:var(--text-muted); margin-bottom:24px;">
+          Best-effort selon qualité des données fournies · aucune action prod sans preuve.
+        </p>
+        <a
+          href="mailto:samuel@kazmanager.ai?subject=AgentOps%20Diagnostic%20-%20%5BNom%20du%20workflow%5D&body=Bonjour%20Samuel%2C%0A%0AJe%20souhaite%20un%20diagnostic%20AgentOps%20sur%20le%20workflow%20suivant%20%3A%0A%5BDescription%5D%0A%0AStack%20%3A%20%5Bn8n%2C%20Bubble%2C%20autre%5D"
+          class="btn btn-primary"
+          aria-label="Demander un AgentOps Diagnostic 300-500€"
+          data-cta
+          data-cta-id="diagnostic_cta"
+          data-section="diagnostic"
+          data-cta-type="diagnostic"
+        >Demander un diagnostic →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════════════════
        [8] PRICING
   ══════════════════════════════════════════════════════ -->
   <section id="pricing">
@@ -499,7 +545,7 @@
 
       <div class="section-label animate-on-scroll">Tarifs</div>
       <h2 class="mb-12 animate-on-scroll stagger-1">
-        Deux façons d'intégrer le Reliability Pack
+        Aller plus loin après le diagnostic
       </h2>
       <p class="mb-8 animate-on-scroll stagger-2" style="font-size:13px; color:var(--text-muted);">
         Point de rentabilité client : 1 incident évité = ROI positif.
@@ -519,7 +565,7 @@
           <ul class="pricing-features" role="list">
             <li>Déploiement Gate6 sur votre stack n8n + Redis</li>
             <li>LOCK PACKAGE complet (exports JSON + script + runbook)</li>
-            <li>Preuves reproductibles en &lt; 2 min (EXIT=0 garanti)</li>
+            <li>Preuves reproductibles en &lt; 2 min (EXIT=0 · best-effort)</li>
             <li>Tableau "que faire si ça casse" (incident response)</li>
             <li>White-label inclus — revendable à vos clients</li>
             <li>Kick-off 30 min + 1 workflow cible de votre choix</li>
@@ -552,7 +598,7 @@
             <li>Runbook mis à jour à chaque évolution de votre stack</li>
             <li>Support incident response sous 24h</li>
             <li>Nouvelles preuves immuables à chaque release</li>
-            <li>Évolutions contrôlées (PAS DE CASSE garanti)</li>
+            <li>Évolutions contrôlées (PAS DE CASSE · best-effort)</li>
           </ul>
 
           <a
@@ -672,8 +718,8 @@
         Prêt à sanctuariser votre premier workflow&nbsp;?
       </h2>
       <p class="mb-48 animate-on-scroll stagger-2" style="max-width:480px; margin:0 auto 48px; font-size:14px;">
-        Donnez-moi 1 workflow "à problème".<br>
-        Je vous livre le LOCK PACKAGE en 48h — preuves incluses, EXIT=0 garanti.
+        Décrivez votre incident en 2 lignes.<br>
+        Après diagnostic, je vous propose un plan LOCK PACKAGE si une sécurisation est nécessaire — preuves incluses, best-effort.
       </p>
 
       <!-- Process steps -->
